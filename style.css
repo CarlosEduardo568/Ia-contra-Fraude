@@ -1,0 +1,59 @@
+/*-----Configurações gerais------*/
+header {
+    height: 8vh;
+    margin: 0px;
+    background: white;
+
+    border-bottom: 1px solid rgb(98, 0, 255, 0.1);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header h1{
+    margin: 0px;
+    font-size: 20px;
+    color: #6200FF;
+    text-align: center;
+
+    flex: 1;
+}
+
+body {
+    margin: 0px;
+    background: #F5F0F0;
+}
+
+/*main e footer*/
+main {
+    height: 100vh;
+}
+footer {
+    background: #6200FF;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 50vh;
+}
+
+/*------------------------------------------*/
+
+#span-ajuda-back-icon img{
+    border: 2px solid #6200FF;
+    border-radius: 100%;
+
+    margin-left: 20px;
+    width: 16px;
+    height: 16px;
+    padding: 4px;
+
+
+    display: block; /* Remove espaços vazios abaixo da imagem */
+    flex-shrink: 0; /* Impede que a imagem diminua */
+}
+
+/*--------- Tela para PC -----------*/
+@media (min-width: 758px) {
+    header h1{
+        font-size: 30px;
+    }
+}

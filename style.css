@@ -1,4 +1,7 @@
-/*-----Configurações gerais------*/
+* {
+    font-family: sans-serif;
+}
+/*--------Configurações gerais---------*/
 header {
     height: 8vh;
     margin: 0px;
@@ -9,9 +12,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    overflow: hidden;
 }
 header h1{
-    margin: 0px;
     font-size: 20px;
     color: #6200FF;
     text-align: center;
@@ -24,9 +27,18 @@ body {
     background: #F5F0F0;
 }
 
-/*main e footer*/
+h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*---main e footer----*/
 main {
     height: 100vh;
+    width: 90%;
+    margin: auto auto;
+
+    max-height: 100vh;
 }
 footer {
     background: #6200FF;
@@ -46,14 +58,78 @@ footer {
     height: 16px;
     padding: 4px;
 
+    max-width: 20px;
+    max-height: 20px;
+
 
     display: block; /* Remove espaços vazios abaixo da imagem */
     flex-shrink: 0; /* Impede que a imagem diminua */
 }
 
+/*---------------- Apresentação --------------------*/
+#icone-verificanews {
+    background: url(./assets/verificanews-icon.svg) no-repeat center center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+
+    border-radius: 100%;
+}
+
+.div-apresentacao {
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 10px;
+}
+
+/*------------------- Verificar notícia --------------*/
+.div-verificar-noticia {
+    width: 95%;
+    margin: auto;
+}
+.div-input-url{
+    background: #E0EEFF;
+    margin-top: 5px;
+
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+   
+}
+/*configuração do display*/
+.div-input-url-display{
+    background: transparent;
+    width: 90%;
+    height: 50px;
+    border: none;
+    margin-left: 8px;
+    
+    font-size: 16px;
+}
+.div-input-url-display::placeholder {
+    font-size: 16px;
+    font-weight: bold;
+}
+/*outilne quando em foco*/
+.div-input-url:focus-within{
+    outline: 3px solid #7E2EFF;
+    background: #ebf4ff;
+}
+
+.div-input-url-display:focus{
+    outline: none;
+}
+/*-----Botão de verificar-----*/
+
+
 /*--------- Tela para PC -----------*/
 @media (min-width: 758px) {
     header h1{
         font-size: 30px;
+    }
+
+    main {
+        width: 30%;
     }
 }

@@ -32,13 +32,20 @@ h1 {
     padding: 0px;
 }
 
+h4, h3{
+    margin: 0px;
+    padding: 0px;
+    color: #3D3D3D;
+}   
+
+p {
+    color: #555555;
+}
+
 /*---main e footer----*/
 main {
-    height: 100vh;
-    width: 90%;
+    width: 87%;
     margin: auto auto;
-
-    max-height: 100vh;
 }
 footer {
     background: #6200FF;
@@ -66,6 +73,10 @@ footer {
     flex-shrink: 0; /* Impede que a imagem diminua */
 }
 
+#span-ajuda-back-icon img:hover {
+    transition: 0.2s ease;
+    transform: scale(1.07);
+}
 /*---------------- Apresentação --------------------*/
 #icone-verificanews {
     background: url(./assets/verificanews-icon.svg) no-repeat center center;
@@ -83,9 +94,9 @@ footer {
     padding: 10px;
 }
 
-/*------------------- Verificar notícia --------------*/
+/*----------------- Verificar notícia --------------*/
 .div-verificar-noticia {
-    width: 95%;
+    width: 100%;
     margin: auto;
 }
 .div-input-url{
@@ -121,7 +132,36 @@ footer {
     outline: none;
 }
 /*-----Botão de verificar-----*/
+.bnt-verificar-noticias{
+    box-shadow: 2px 2px 5px rgb(51, 16, 107);
+    width: 100%;
+    max-width: 100%;
+    height: 50px;
+    background: #6200FF;
 
+    color: #E0EEFF;
+    font-weight: bold;
+
+    border: 1px solid #4800bc;
+    border-radius: 10px;
+
+    transition: all 0.2s ease;
+}
+.bnt-verificar-noticias:hover {
+    transform: translateY(-2.5px) scale(1.05);
+}
+.bnt-verificar-noticias:active{
+    transform: scale(0.95);
+}
+
+/*---------------- Resultado da Análise --------------*/
+.div-resultado {
+    margin-top: 7px;
+    height: 40vh;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid rgb();
+}
 
 /*--------- Tela para PC -----------*/
 @media (min-width: 758px) {
